@@ -32,10 +32,14 @@ function generatePassword(){
   }
 
   if (passwordLength < 8) {
-    alert("dont be dumb son");
+    alert("Your password must be at least 8 characters in length.");
     return null;
   }
   
+  if (passwordLength > 128) {
+    alert("Your password must be under 129 characters in length.");
+    return null;
+  }
 
 
 
