@@ -57,7 +57,17 @@ function generatePassword(){
     "Click 'OK' to include Special Characters in your password."
   );
 
-  
+  if (
+    !includeLowerCaseLetters &&
+    !includeUpperCaseLetters &&
+    !includeNumbers &&
+    !includeSpecialCharacters
+  ) {
+    alert("You must confirm at least one of the different character types! :(")
+    return null;
+  }
+
+
 
 
 
