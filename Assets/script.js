@@ -42,10 +42,14 @@ function generatePassword(){
   }
 
   var includeLowerCaseLetters = confirm(
-    "Click 'OK' to include lower case letters in your password."
+    "Click 'OK' to include Lower Case Letters in your password."
   );
 
-  var 
+  var includeUpperCaseLetters = confirm(
+    "Click 'OK' to include Upper Case Letters in your password."
+  );
+
+  
 
 
 
