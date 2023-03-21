@@ -49,7 +49,13 @@ function generatePassword(){
     "Click 'OK' to include Upper Case Letters in your password."
   );
 
+  var includeNumbers = confirm(
+    "Click 'OK' to include Numbers in your password."
+  );
+
   
+
+
 
 
 
