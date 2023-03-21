@@ -41,6 +41,12 @@ function generatePassword(){
     return null;
   }
 
+  var includeLowerCaseLetters = confirm(
+    "Click 'OK' to include lower case letters in your password."
+  );
+
+  var 
+
 
 
 
