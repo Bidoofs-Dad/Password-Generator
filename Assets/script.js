@@ -53,6 +53,10 @@ function generatePassword(){
     "Click 'OK' to include Numbers in your password."
   );
 
+  var includeSpecialCharacters = confirm(
+    "Click 'OK' to include Special Characters in your password."
+  );
+
   
 
 
