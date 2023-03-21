@@ -67,17 +67,15 @@ function generatePassword(){
     return null;
   }
 
+  var options = {
+    passwordLength: passwordLength,
+    includeLowerCaseLetters: includeLowerCaseLetters,
+    includeUpperCaseLetters: includeUpperCaseLetters,
+    includeNumbers: includeNumbers,
+    includeSpecialCharacters: includeSpecialCharacters,
+  };
 
-
-
-
-
-
-
-
-
-
-
+  return options
 }
 
 
