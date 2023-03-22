@@ -13,6 +13,8 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// making the next 4 variables as arrays seemed like a good place to start, I just don't know how to call up to them with a random generator
+
 // This is the variable that the code should come to when adding lower cased letters
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
 
