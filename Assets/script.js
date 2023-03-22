@@ -49,6 +49,7 @@ function generatePassword(){
     return null;
   }
 
+  // the 4 following variables pretty much just confirm if you want those attributes or not. I learned the 'confirm' method via Google again, very useful
   var includeLowerCaseLetters = confirm(
     "Click 'OK' to include Lower Case Letters in your password."
   );
@@ -65,6 +66,7 @@ function generatePassword(){
     "Click 'OK' to include Special Characters in your password."
   );
 
+  // this pretty much just yells at you if you say no to all 4 different types of characters
   if (
     !includeLowerCaseLetters &&
     !includeUpperCaseLetters &&
@@ -75,6 +77,7 @@ function generatePassword(){
     return null;
   }
 
+  // I'm not 100% this works properly but, it did change the password output from 'undefined' to '[object Object]' so that must mean something, I just am not sure where to take it from here
   var textBoxIThink = {
     passwordLength: passwordLength,
     includeLowerCaseLetters: includeLowerCaseLetters,
@@ -90,5 +93,9 @@ function generatePassword(){
 // I kept finding strings of code related to this one when trying to find how to get the password to appear in the text box, but I"m not really sure how it works
 
 // math.floor(math.random() * randomPassword.length);
+
+// --------------------------------------------------------
+
+// I would have more here but I'm not really sure where to take it from here, most examples I have found online don't use the prompt method or are using terms from ES6, I'm not sure if we learned the proper method to do a randomizer unfortunately
 
 
