@@ -13,19 +13,27 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-var specialCharacters = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~', ];
+// This is the variable that the code should come to when adding lower cased letters
+var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
 
-var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',];
+// This is the variable that the code should come to when adding upper cased letters
+var upperCaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
 
-var lowerCaseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',];
+// This is the variable that the code should come to when adding numbers
+var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",];
 
-var upperCaseLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',];
+// This is the variable that the code should come to when adding special characters
+// side note, I'm hoping the double '\\' is what would work for the password, not really sure if it would show 2 or 1 when working.
+var specialCharacters = [" ", "!", '"', "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~", ];
 
+// this is the function my study group was able to code, that goes through all the prompts of what character types you want for your password, as well as pushing 'alerts' when criteria isn't met
+// side note, I had no idea what parseInt did, but it seems to have worked, thanks Google!
 function generatePassword(){
   var passwordLength = parseInt(
     prompt("How long would you like your password to be?")
   );
 
+  // This bit of code rejects your input if you try choosing something that is not a number to define password length
   if (Number.isNaN(passwordLength)) {
     alert("Must provide a number for the password length.");
     return null;
@@ -67,7 +75,7 @@ function generatePassword(){
     return null;
   }
 
-  var options = {
+  var textBoxIThink = {
     passwordLength: passwordLength,
     includeLowerCaseLetters: includeLowerCaseLetters,
     includeUpperCaseLetters: includeUpperCaseLetters,
@@ -75,7 +83,12 @@ function generatePassword(){
     includeSpecialCharacters: includeSpecialCharacters,
   };
 
-  return options
+  return textBoxIThink
 }
+
+
+// I kept finding strings of code related to this one when trying to find how to get the password to appear in the text box, but I"m not really sure how it works
+
+// math.floor(math.random() * randomPassword.length);
 
 
