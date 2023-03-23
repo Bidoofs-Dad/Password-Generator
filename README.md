@@ -1,5 +1,3 @@
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
 # Password Generator!
 
 ## About The Application
@@ -34,7 +32,19 @@ So all in all, issues wise, I am really happy with how much my study group was a
 
 ## Screenshots
 
-I'll include some screenshots below, just showing that the prompts at least work! I'll also include one of the password box after all prompts have been completed (Where the random password should be).
+I'll include some screenshots below (10 to be exact, sorry for so many), just showing that the prompts at least work! I'll also include one of the password box after all prompts have been completed (Where the random password should be).
+
+<!-- ![Bidoofs-Dads-Portfolio](/assets/images/Screenshot%20Top.png) -->
+![Password-Generator](/Assets/images/03-01%20Password%20Length.png)
+![Password-Generator](/Assets/images/03-02%20Provide%20Number.png)
+![Password-Generator](/Assets/images/03-03%20At%20Least%208%20Characters.png)
+![Password-Generator](/Assets/images/03-04%20Less%20Than%20129%20Characters.png)
+![Password-Generator](/Assets/images/03-05%20LowerCase.png)
+![Password-Generator](/Assets/images/03-06%20UpperCase.png)
+![Password-Generator](/Assets/images/03-07%20Numbers.png)
+![Password-Generator](/Assets/images/03-08%20SpecialCharacters.png)
+![Password-Generator](/Assets/images/03-10%20No%20Character%20Types.png)
+![Password-Generator](/Assets/images/03-09%20What%20Is%20Displayed%20After%20Prompts.png)
 
 ## Conclusion
 
@@ -44,4 +54,4 @@ In conclusion, I enjoyed this project a bit, I just wish we had been better equi
 
 Below I will include the link to the live website, hosted by GitHub Pages!
 
-<link>
+https://bidoofs-dad.github.io/Password-Generator/
